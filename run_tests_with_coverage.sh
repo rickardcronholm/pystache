@@ -9,6 +9,7 @@ pip install xmlrunner
 pip install pep8
 pip install pylint
 pip install coverage
+pip install pytest-cov
 
 set -e
 set -x
