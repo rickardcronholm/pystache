@@ -16,7 +16,7 @@ set -x
 
 rm -f pep8.log pylint.log
 
-./test.py
+py.test test.py --cov=pystache
 
 python -m coverage xml -o coverage.xml
 python -m coverage html -d coverage
