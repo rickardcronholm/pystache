@@ -1,6 +1,8 @@
-#!/usr/bin/env bash
-set -e 
+PATH=$WORKSPACE/venv/bin:/usr/local/bin:$PATH
+if [ ! -d "venv" ]; then
+	virtualenv venv
+fi
 
-. ~/.virtualenvs/python2.7/bin/activate
+. venv/bin/activate
 
 ./test.py
