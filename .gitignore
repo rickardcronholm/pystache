@@ -22,3 +22,7 @@ python_tests_xml
 coverage
 pep8.log
 pyflakes.log
+
+# venv
+venv/*
+venv
