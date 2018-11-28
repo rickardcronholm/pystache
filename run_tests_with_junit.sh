@@ -4,5 +4,6 @@ if [ ! -d "venv" ]; then
 fi
 
 . venv/bin/activate
+pip install xmlrunner
 
 ./test.py
