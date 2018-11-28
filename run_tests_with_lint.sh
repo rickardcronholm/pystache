@@ -1,7 +1,14 @@
-#!/usr/bin/env bash
+PATH=$WORKSPACE/venv/bin:/usr/local/bin:$PATH
+if [ ! -d "venv" ]; then
+	virtualenv venv
+fi
 
+. venv/bin/activate
 
-. ~/.virtualenvs/python2.7/bin/activate
+pip install xmlrunner
+pip install pep8
+pip install pyflakes
+
 set -e
 set -x
 
